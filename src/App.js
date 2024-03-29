@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect } from "react";
 import { tx, t } from "@transifex/native";
 import { T, useLanguages } from "@transifex/react";
 import ProductTable from "./Components/ProductTable";
@@ -7,11 +8,16 @@ tx.init({
   token: "1/51e48ff8cd1de3a357ac4480a322c990ef5df2a5",
 });
 
-const changeLanguage = (locale) => {
-  tx.setCurrentLocale(locale);
-};
-
 function App() {
+  useEffect(() => {
+    // const userLanguage = navigator.language || navigator.userLanguage;
+    // console.log(userLanguage);
+    // const supportedLocales = window.live;
+    // console.log("Supported locales:", supportedLocales);
+    // // window.live.setCurrentLocale(userLanguage);
+    // tx.setCurrentLocale(userLanguage);
+  }, []);
+
   const languages = useLanguages();
   const fName = "David";
   return (
