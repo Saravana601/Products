@@ -1,0 +1,123 @@
+{
+"men's clothing": {
+"string": "ওহে বিশ্ব",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+
+},
+    "hello world": {
+        "string": "ওহে বিশ্ব",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "Hello World": {
+        "string": "ওহে বিশ্ব",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "welcome.string": {
+        "string": "ওহে বিশ্ব",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "First Name": {
+        "string": "নামের প্রথম অংশ",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "productTable.title": {
+        "string": "পণ্য টেবিল",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "Hello {username}": {
+        "string": "হ্যালো {username}",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "title": {
+        "string": "শিরোনাম",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "price": {
+        "string": "দাম",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "description": {
+        "string": "বর্ণনা",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "category": {
+        "string": "শ্রেণী",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "image": {
+        "string": "ছবি",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "rating": {
+        "string": "রেটিং",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "rating_count": {
+        "string": "রেটিং কাউন্ট",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "id": {
+        "string": "আইডি",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "ratingcount": {
+        "string": "রেটিং কাউন্ট",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "name": {
+        "string": "Name",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "Hi {username}": {
+        "string": "Hi {username}",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "Hi {name}": {
+        "string": "Hi {name}",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    },
+    "Hey {name}": {
+        "string": "Hey {name}",
+        "context": "",
+        "developer_comment": "",
+        "character_limit": null
+    }
+}

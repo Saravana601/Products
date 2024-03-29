@@ -1,0 +1,24 @@
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+  }
+  
+  .product-table th {
+    background-color: lightblue;
+    color: #ffffff;
+  }
+  
+  .product-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .product-table img {
+    max-width: 100px;
+  }
+  

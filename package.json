@@ -1,0 +1,39 @@
+{
+  "name": "transifex-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@transifex/cli": "^7.1.0",
+    "@transifex/native": "^7.1.0",
+    "@transifex/react": "^7.1.0",
+    "cra-template": "1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "push-transifex": "npx txjs-cli push --token=1/51e48ff8cd1de3a357ac4480a322c990ef5df2a5 --secret=1/d7f4ea55663911974421e1d0c6c96d0d818587ca --verbose src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
