@@ -21,4 +21,48 @@
   .product-table img {
     max-width: 100px;
   }
-  
+
+.language-setting {
+  position: relative;
+}
+
+.settings-icon {
+  cursor: pointer;
+}
+
+.language-selector {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background-color: #fff;
+}
+
+.language-selector select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

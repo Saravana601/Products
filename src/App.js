@@ -1,46 +1,51 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import React, { useEffect } from "react";
-import { tx, t } from "@transifex/native";
-import { T, useLanguages } from "@transifex/react";
 import ProductTable from "./Components/ProductTable";
-
-tx.init({
-  token: "1/51e48ff8cd1de3a357ac4480a322c990ef5df2a5",
-});
+import Cookies from "js-cookie";
 
 function App() {
+  const [language, setLanguage] = useState("en");
+  const [showLanguageSelector, setShowLanguageSelector] = useState(false);
+
   useEffect(() => {
-    // const userLanguage = navigator.language || navigator.userLanguage;
-    // console.log(userLanguage);
-    // const supportedLocales = window.live;
-    // console.log("Supported locales:", supportedLocales);
-    // // window.live.setCurrentLocale(userLanguage);
-    // tx.setCurrentLocale(userLanguage);
+    const savedLanguage = Cookies.get("preferredLanguage");
+
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
   }, []);
 
-  const languages = useLanguages();
-  const fName = "David";
+  const handleChangeLanguage = (selectedLanguage) => {
+    setLanguage(selectedLanguage);
+    Cookies.set("preferredLanguage", selectedLanguage, { expires: 365 });
+    setShowLanguageSelector(false);
+  };
+
+  const toggleLanguageSelector = () => {
+    setShowLanguageSelector(!showLanguageSelector);
+  };
+
   return (
     <>
+      <div className="language-setting">
+        <span className="settings-icon" onClick={toggleLanguageSelector}>
+          ⚙️
+        </span>
+        {showLanguageSelector && (
+          <div className="language-selector">
+            <h4>Choose Your Default Language:</h4>
+            <select
+              value={language}
+              onChange={(e) => handleChangeLanguage(e.target.value)}
+            >
+              <option value="en">English</option>
+              <option value="hi">हिंदी (Hindi)</option>
+            </select>
+          </div>
+        )}
+      </div>
       <div className="container">
-        <p className="text">
-          <T _str="Hello World" _key="welcome.string" />
-        </p>
-        <p className="text">
-          <T _str="First Name" />
-        </p>
-        <p className="text">
-          <T _str="Hi {name}" name={fName} />
-        </p>
-        {languages.map(({ code, name }) => (
-          <button
-            className="button"
-            key={code}
-            onClick={() => tx.setCurrentLocale(code)}
-          >
-            {name}{" "}
-          </button>
-        ))}
+        <p className="text">Product Details</p>
       </div>
       <ProductTable />
     </>

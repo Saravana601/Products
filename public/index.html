@@ -25,10 +25,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script type="text/javascript">window.liveSettings={api_key:"ca385c0fc73b484aa24bfeac27b5661a"}</script>
+    
+    <script>
+    function getCookie(name) {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.startsWith(name + '=')) {
+          return cookie.substring(name.length + 1);
+        }
+      }
+      return null;
+    }
+    const preferredLanguage = getCookie('preferredLanguage');
+    </script>
+
+    <script type="text/javascript">window.liveSettings={
+      api_key:"ca385c0fc73b484aa24bfeac27b5661a",
+      detectlang: function() {
+        return preferredLanguage;
+      }
+    }
+    </script>
     <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
   </head>
-  
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
