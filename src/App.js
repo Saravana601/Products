@@ -9,6 +9,7 @@ function App() {
 
   useEffect(() => {
     const savedLanguage = Cookies.get("preferredLanguage");
+    console.log(window.Transifex.live);
 
     if (savedLanguage) {
       setLanguage(savedLanguage);
@@ -40,6 +41,7 @@ function App() {
             >
               <option value="en">English</option>
               <option value="hi">हिंदी (Hindi)</option>
+              <option value="fr">Français (French)</option>
             </select>
           </div>
         )}
