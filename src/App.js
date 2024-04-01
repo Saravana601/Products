@@ -9,7 +9,6 @@ function App() {
 
   useEffect(() => {
     const savedLanguage = Cookies.get("preferredLanguage");
-    console.log(window.Transifex.live);
 
     if (savedLanguage) {
       setLanguage(savedLanguage);
@@ -20,6 +19,8 @@ function App() {
     setLanguage(selectedLanguage);
     Cookies.set("preferredLanguage", selectedLanguage, { expires: 365 });
     setShowLanguageSelector(false);
+
+    window.location.reload();
   };
 
   const toggleLanguageSelector = () => {
